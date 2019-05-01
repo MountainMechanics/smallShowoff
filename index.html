@@ -3,8 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Who is Banksy?</title>
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/modals.css">
+    <script type="text/javascript" src="app/app.js"></script>
 </head>
-<body>
-    Who is Banksy?
+<body class="font-basic">
+    <header class="jumbotron jumboheader font-jumbo">
+        <span class="jumbo-displace">Who is <span class="head-red">Banksy</span>?</span>
+    </header>
+    <section class="jumboInfo">
+        <div class="card animate" id="styleCard">
+            <span class="font-header">Style</span><br><br>
+            Banksy is a streetartist.
+            A lot of people in the industry don´t like his work because its too "on the nose", the points he´s making are too obvious.<br><br>
+            <span class="highlight">Using stencils</span> and graffiti spray-cans Banksy quickly creates his work <span class="highlight">without being seen</span>.<br>
+            Even tho his pieces do reach a high amount in auctions during biddings, he <span class="highlight">doesn´t like art being created only for monetary reasons</span>.
+        </div>
+
+        <div class="card animate" id="artCard">
+            <span class="font-header">Artwork</span><br><br>
+            His art is greatly adored and received a lot of attention in the media during the auction of his piece <span class="highlight">"Balloon Girl"</span>.<br>
+            The artwork was <span class="highlight">shredded using blades hidden within the frame of the picture</span>. Everybody at the auction was horrified.
+        </div>
+
+        <div class="card animate" id="storyCard">
+            <span class="font-header">Story</span><br><br>
+            In London he had a confrontation with <span class="highlight">Robbo, a well-known Graffiti artist</span> of the city. Banksy integrated the oldest and most popular piece of all of London into one of his own works and <span class="highlight">broke a rule of graffiti</span>.<br>
+            In graffiti that is a <span class="highlight">big NOGO</span> because you effectively steal someone else´s piece to make your own better.<br>
+            This led to <span class="highlight">"war" between Robbo and Banksy</span>.
+        </div>
+        <picture class="wide-info">
+            <source srcset="img_src/banksy_bg_narrow.png" media="(min-width: 600px)">
+            <source srcset="img_src/banksy_bg_small.png" media="(max-width: 600px)">
+            <img src="img_src/banksy_bg_small.png">
+        </picture>
+        <div class="slide-in">
+            “The thing I hate the most about advertising is that it attracts all the bright, creative and ambitious young people, leaving us mainly with the slow and self-obsessed to become our artists.. Modern art is a disaster area. Never in the field of human history has so much been used by so many to say so little.”<br>
+            ― Banksy
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
 </body>
 </html>
