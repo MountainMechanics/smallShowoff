@@ -37,7 +37,8 @@ function elementInViewport(el) {
 
 //To top btn
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    var scrollDistance = 100;
+    if (document.body.scrollTop > scrollDistance || document.documentElement.scrollTop > scrollDistance) {
         document.getElementById("toTopBtn").style.setProperty("transform","scale(1)");
     } else {
         document.getElementById("toTopBtn").style.removeProperty("transform");
